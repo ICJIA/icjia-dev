@@ -1,11 +1,15 @@
 <template>
+    <div>
 
+        <div :id="generateId('divElement')" @click="displayViz()" class="viz-emebed viz-hover">
 
-    <div :id="generateId('divElement')" @click="displayViz()" class="viz-emebed viz-hover">
-        <div :id="generateId('vizElement')" style="width: 100%; " class="viz"></div>
-        <div :id="generateId('thumb')">
-            <img :src="thumbnail" :id="generateId('vizThumb')" class="viz-img">
+            <div :id="generateId('vizElement')" style="width: 100%; " class="viz"></div>
+            <div :id="generateId('thumb')">
+                <img :src="thumbnail" :id="generateId('vizThumb')" class="viz-img">
+            </div>
+            <div class="text-xs-center" :id="generateId('viz-caption')">Click visualization to load</div>
         </div>
+
     </div>
 
 
@@ -26,7 +30,9 @@
             displayViz: function (e) {
                 //console.log(this.uuid)
                 var thumb = document.getElementById('vizThumb-' + this.uuid);
+                var caption = document.getElementById('viz-caption-' + this.uuid);
                 thumb.remove();
+                caption.remove();
                 var divElement = document.getElementById('divElement-' + this.uuid);
                 divElement.classList.remove('viz-hover')
                 var vizElement = document.getElementById("vizElement-" + this.uuid);

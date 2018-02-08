@@ -227,7 +227,7 @@
         height: 700px;
 
         /* Create the parallax scrolling effect */
-        background-image: url(http://placehold.it/1500x700);
+        background-image: url(https://placehold.it/1500x700);
         background-attachment: fixed;
         background-position: bottom center;
         background-position-y: top;
@@ -273,12 +273,18 @@
     }
 
 
-
-
-
     .viz-embed .viz-img {
         max-width: 100%
     }
+
+    *[id^='viz-caption-'] {
+        font-weight: 900;
+        font-size: 14px;
+        margin-top: 15px;
+        padding-bottom: 25px;
+        color: #888;
+    }
+
 
     .viz-hover:hover {
         box-shadow: 0px 0px 50px #000000;
