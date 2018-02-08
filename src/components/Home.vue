@@ -309,6 +309,12 @@
             align-self: center;
         }
 
+        .viz-embed {
+
+
+            width: 100%;
+        }
+
 
 
         .article {

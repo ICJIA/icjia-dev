@@ -53,7 +53,7 @@
                             vizElement.style.marginLeft = '-100px';
                         }
                         else {
-                            vizElement.style.width = '400px';
+                            vizElement.style.width = '350px';
                             vizElement.style.height = '927px';
                             vizElement.style.marginLeft = '-80px';
                         }
