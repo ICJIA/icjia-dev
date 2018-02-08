@@ -78,9 +78,9 @@
 
                     <p v-dummy="100" style="width: 100%"></p>
 
-                    <figure>
+                    <!-- <figure>
                         <div class="article-img"></div>
-                    </figure>
+                    </figure> -->
 
                     <p v-dummy="100" style="width: 100%"></p>
 
