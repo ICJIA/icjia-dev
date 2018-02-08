@@ -2,12 +2,21 @@
     <div>
         <v-toolbar class="nav headroom headroom--unpinned" id="nav" fixed color="grey darken-3" dark>
             <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-            <v-toolbar-title>
+            <v-toolbar-title class="hidden-sm-and-down">
                 <a href="">
                     <img src="/static/icjia-01.png" height="40" style="margin-top: 5px" />
                 </a>
             </v-toolbar-title>
-            <v-spacer class="text-xs-center article-title" v-dummy="10"></v-spacer>
+            <v-spacer class="text-xs-center hidden-sm-and-down article-title" v-dummy="10">
+
+            </v-spacer>
+
+            <v-spacer class="text-xs-center hidden-md-and-up">
+                <a href="">
+                    <img src="/static/icjia-01.png" height="40" style="margin-top: 5px" />
+                </a>
+            </v-spacer>
+
             <v-toolbar-items class="hidden-sm-and-down">
                 <v-btn flat>Link One</v-btn>
                 <v-btn flat>Link Two</v-btn>
@@ -326,6 +335,10 @@
         }
 
 
+
+
+
+
     }
 
     @media screen and (min-width: 600px) {
@@ -357,6 +370,9 @@
         .hero-title-sub {
             display: inline-block
         }
+
+
+
 
 
 
