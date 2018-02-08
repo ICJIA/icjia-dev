@@ -1,7 +1,7 @@
 <template>
 
 
-    <div :id="generateId('divElement')" @click="displayViz()" class="viz-emebed">
+    <div :id="generateId('divElement')" @click="displayViz()" class="viz-emebed viz-hover">
         <div :id="generateId('vizElement')" style="width: 100%; " class="viz"></div>
         <div :id="generateId('thumb')">
             <img :src="thumbnail" :id="generateId('vizThumb')" class="viz-img">
@@ -53,8 +53,9 @@
                             vizElement.style.marginLeft = '-100px';
                         }
                         else {
-                            vizElement.style.width = '100%';
-                            vizElement.style.height = '1294px';
+                            vizElement.style.width = '400px';
+                            vizElement.style.height = '927px';
+                            vizElement.style.marginLeft = '-80px';
                         }
                 // Create a viz object and embed it in the container div.
                 console.log(divElement.offsetWidth)

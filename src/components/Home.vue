@@ -280,7 +280,7 @@
         max-width: 100%
     }
 
-    .viz-embed:hover {
+    .viz-hover:hover {
         box-shadow: 0px 0px 50px #000000;
         z-index: 2000;
         -webkit-transition: all 200ms ease-in;
