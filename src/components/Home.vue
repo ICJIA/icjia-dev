@@ -70,17 +70,23 @@
 
                     <v-layout row justify-center>
                         <v-flex xs8>
-                            <viz class="viz-embed" :uuid="generateUUID()" thumbnail="https://public.tableau.com/static/images/Op/OpioidPrescriptionsandOverdoseDeathsinIllinois/FullDash/1_rss.png"
-                                viz="https://public.tableau.com/views/OpioidPrescriptionsandOverdoseDeathsinIllinois/FullDash?:embed=y&:display_count=yes"
+                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="500" :lgHeight="350" thumbnail="/static/shiny1.png" shiny="http://163.191.125.234:3838/sample-apps/hello/"
                             />
                         </v-flex>
                     </v-layout>
 
                     <p v-dummy="100" style="width: 100%"></p>
 
-                    <!-- <figure>
-                        <div class="article-img"></div>
-                    </figure> -->
+                    <p v-dummy="100" style="width: 100%"></p>
+
+                    <v-layout row justify-center>
+                        <v-flex xs8>
+                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="1200" :lgHeight="1250" thumbnail="/static/shiny2.png" shiny="https://bobaekang.shinyapps.io/crime_data_profile_demo/"
+                            />
+                        </v-flex>
+                    </v-layout>
+
+                    <p v-dummy="100" style="width: 100%"></p>
 
                     <p v-dummy="100" style="width: 100%"></p>
 
@@ -119,6 +125,7 @@
     import Github from "@/components/Github";
     import metaInfo from "../meta";
     import Viz from "@/components/Viz"
+    import Shiny from '@/components/Shiny'
     const uuidv4 = require('uuid/v4');
     import _ from 'lodash';
     if (!('remove' in Element.prototype)) {
@@ -163,7 +170,8 @@
         },
         components: {
             Viz,
-            Github
+            Github,
+            Shiny
         }
     };
 </script>
@@ -272,12 +280,23 @@
         align-self: center;
     }
 
+    .viz-embed {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 
     .viz-embed .viz-img {
         max-width: 100%
     }
 
-    *[id^='viz-caption-'] {
+    .shiny-embed .shiny-img {
+        max-width: 100%
+    }
+
+
+
+    *[id^='viz-caption-'],
+    *[id^='shiny-caption-'] {
         font-weight: 900;
         font-size: 14px;
         margin-top: 15px;
@@ -286,7 +305,8 @@
     }
 
 
-    .viz-hover:hover {
+    .viz-hover:hover,
+    .shiny-hover:hover {
         box-shadow: 0px 0px 50px #000000;
         z-index: 2000;
         -webkit-transition: all 200ms ease-in;

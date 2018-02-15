@@ -19,7 +19,8 @@
             <v-flex xs12 py-3 text-xs-center white--text>
               &copy; 2018
               <strong>
-                <router-link to="/">Illinois Criminal Justice Information Authority</router-link>
+                <router-link to="/">Illinois Criminal Justice Information Authority</router-link>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="https://github.com/ICJIA/icjia-tableau-vuetify">Github</a>
               </strong>
             </v-flex>
           </v-layout>
