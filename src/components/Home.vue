@@ -68,12 +68,12 @@
 
                     <h2 v-dummy="10"></h2>
 
-                    <v-layout row justify-center>
+                    <!-- <v-layout row justify-center>
                         <v-flex xs8>
-                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="500" :lgHeight="350" thumbnail="/static/shiny1.png" shiny="http://163.191.125.234:3838/sample-apps/hello/"
+                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="500" :lgHeight="350" thumbnail="/static/shiny1.png" shiny="https://163.191.125.234:3838/sample-apps/hello/"
                             />
                         </v-flex>
-                    </v-layout>
+                    </v-layout> -->
 
                     <p v-dummy="100" style="width: 100%"></p>
 
