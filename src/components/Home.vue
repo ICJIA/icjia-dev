@@ -81,7 +81,7 @@
 
                     <v-layout row justify-center>
                         <v-flex xs8>
-                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="1200" :lgHeight="1250" thumbnail="/static/shiny2.png" shiny="https://bobaekang.shinyapps.io/crime_data_profile_demo/"
+                            <shiny class="shiny-embed" :uuid="generateUUID()" :smHeight="1200" :lgHeight="1250" thumbnail="/static/shiny2.png" shiny="https://shinytest.icjia.cloud/app/01_hello"
                             />
                         </v-flex>
                     </v-layout>
