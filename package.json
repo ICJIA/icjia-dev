@@ -14,7 +14,7 @@
     "clean-webpack-plugin": "^0.1.18",
     "date-fns": "^1.29.0",
     "image-webpack-loader": "3.6.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.13",
     "postcss-font-magician": "^2.1.0",
     "uuid": "^3.2.1",
     "vue": "^2.5.2",
